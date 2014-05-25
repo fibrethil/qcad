@@ -156,13 +156,13 @@ int main(int argc, char *argv[]) {
         }
     }
 
-#ifdef Q_OS_WIN32
+//#ifdef Q_OS_WIN32
     // SVG icons are only rendered if this line is present under windows:
     QImageReader::supportedImageFormats();
 
     // the SQLite plugin can only be loaded if this line is present under windows:
     QSqlDatabase::drivers();
-#endif
+//#endif
 
     qRegisterMetaType<RColor>();
     qRegisterMetaTypeStreamOperators<RColor>("RColor");
